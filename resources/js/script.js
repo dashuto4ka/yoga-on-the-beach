@@ -1,8 +1,3 @@
-//alert ("Hello! This is fictional website about yoga on the beach...")
-	/*..... P.S. I was little behind on the second week assignment so 
-	would really appreciate your review so I can finish this course. 
-	Thank you!") */
-
 // JQUERY
 
 jQuery(document).ready(function() {
@@ -38,9 +33,9 @@ jQuery(document).ready(function() {
 	var now = new Date().getTime();
 	var distance = countDownDate - now;
 	var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
     document.getElementById("demo").innerHTML = days + "d   " + hours + "h   " + minutes + "m   " + seconds + "s   ";
 
@@ -50,7 +45,7 @@ jQuery(document).ready(function() {
         }
     }, 1000);
 
-    // GO TO TOP
+  // GO TO TOP
 
 	function scrollWin (x, y) {
 		window.scrollBy(x, y)
@@ -94,9 +89,4 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
-
-
-
-
-
 
