@@ -6,7 +6,6 @@ body {
 	color: #331e44;
 	background: #edfcfc;
 	line-height: 1.5;
-	background: #768305;
 }
 
 h1, h2, h4 {
@@ -34,8 +33,8 @@ h2 {
 }
 
 .jumbotron h1 {
-	padding-top: 8rem;
-	font-size: 2.5rem;
+	padding-top: 5rem;
+	font-size: 3rem;
 	font-family: "Cedarville Cursive";
 	color: white;
 	text-shadow: 2px 2px black;
@@ -228,6 +227,7 @@ button {
 	background-size: cover;
 	width: 100%;
 	height: 50rem;
+	margin: 2rem 0;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
@@ -310,7 +310,7 @@ button {
 
 #demo {
 	text-align: center;
-	font-size: 3rem;
+	font-size: 2rem;
 }
 
 .clock {
@@ -374,7 +374,7 @@ footer img {
 .video {
 	margin: 1rem 0;
 	position: relative;
-	padding-bottom: 40%;
+	padding-bottom: 60%;
 	height: 0;
 }
 
@@ -386,12 +386,8 @@ footer img {
 	height: 100%;
 }
 
-.learn-more.boho {
-	margin-top: -2rem;
-}
-
 .quote-2 {
-	background: url('../images/adobestock2.jpeg') no-repeat center;
+	background: url('../images/adobestock2.jpeg') no-repeat;
 	background-size: cover;
 	justify-content: space-between;
 }
@@ -438,7 +434,7 @@ ol {
 }
 
 .quote-3 {
-	background: url('../images/adobestock8.jpeg') no-repeat center;
+	background: url('../images/adobestock8.jpeg') no-repeat;
 	background-size: cover;
 	justify-content: space-between;
 }
@@ -451,8 +447,8 @@ ol {
 
 /*GALLERY PAGE*/
 
-.jumbotron-gallery {
-	background: #8ccaea url('../images/adobestock23.jpeg') no-repeat center;
+.jumbotron-4 {
+	background: #8ccaea url('../images/adobestock11.jpeg') no-repeat center;
 	background-size: cover;
 }
 
@@ -492,7 +488,6 @@ ol {
 .quote-4 .container {
 	margin-top: 5rem;
 }
-
 
 
 
@@ -567,17 +562,35 @@ ol {
 		margin: 0 auto;
 	}
 
+	.frame {
+		width: 80%;
+		margin: 0 auto;
+		height: 25rem;
+	}
+
 	.clock {
 		width: 80%;
+	}
+
+	#demo {
+		font-size: 3rem;
 	}
 
 	q, span {
 		font-size: 3.2rem;
 	}
 
+	.video {
+		padding-bottom: 50%;
+	}
+
 	.video iframe {
 		width: 70%;
 		height: 90%;
+	}
+
+	.learn-more.boho {
+		margin-top: -2rem;
 	}
 
 	.gallery-images img {
@@ -586,37 +599,36 @@ ol {
 	}
 
 	/* CAROUSEL WITH SLIDERS*/
-	/* The Modal (background) */
 
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  padding-top: 5rem;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgba(0, 0, 0,.8);
-}
+    .modal {
+    	display: none;
+    	position: fixed;
+    	z-index: 1;
+        padding-top: 5rem;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0, 0, 0,.8);
+    }
 
-/* Modal Content */
+    /* Modal Content */
 
-.modal-content {
-  position: relative;
-  background-color: #fefefe;
-  background-color: rgba(0, 0, 0,.8);
-  margin: auto;
-  padding: 0;
-  width: 80%;
-  height: auto;
-  max-width: 1200px;
-}
+    .modal-content {
+    	position: relative;
+    	background-color: #fefefe;
+    	background-color: rgba(0, 0, 0,.8);
+    	margin: auto;
+    	padding: 0;
+    	width: 80%;
+    	height: auto;
+    	max-width: 1200px;
+    }
 
-/* The Close Button */
+    /* The Close Button */
 
-.close {
+    .close {
   color: white;
   position: absolute;
   top: 10px;
@@ -771,6 +783,7 @@ img.hover-shadow {
 	.frame {
 		transition: all .5s;
 		height: 13rem;
+		width: 100%;
 	}
 
 	.frame h2 {

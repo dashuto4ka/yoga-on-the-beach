@@ -21,7 +21,6 @@ jQuery(document).ready(function() {
     $('.heartbeat').mouseover(function() {
     $(this).find('h1').css('color', '#f265a2');
     $(this).find('i').css('color', '#f265a2').addClass('animation');
-    
   });
 
   $('.heartbeat').mouseout(function() {
@@ -29,16 +28,13 @@ jQuery(document).ready(function() {
     $(this).find('i').css('color', '#331e44').removeClass('animation');
   });
 
-
-
-
 });
 
 
 	// COUNTDOWN CLOCK
 
 	var countDownDate = new Date("Jun 21, 2018 00:00:00").getTime();
-    var x = setInterval(function() {
+  var x = setInterval(function() {
 	var now = new Date().getTime();
 	var distance = countDownDate - now;
 	var days = Math.floor(distance / (1000 * 60 * 60 * 24));
@@ -98,8 +94,6 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
-
-//MAKE HEART BEAT
 
 
 

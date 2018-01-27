@@ -61,7 +61,7 @@
         	<p>Here is a video from Boho Beautiful, amazing yoga practice on the beach.</p>
 
         	<div class="video">
-                <iframe width="640" height="360" src="https://www.youtube.com/embed/_Mxtq2IImK4"></iframe>
+                <iframe src="https://www.youtube.com/embed/_Mxtq2IImK4"></iframe>
         	</div>
 
             <p class="learn-more boho">You can find more videos from Boho Beautiful <a href="http://www.youtube.com/channel/UCWN2FPlvg9r-LnUyepH9IaQ" target="_blank">here</a>.</p>
@@ -86,7 +86,9 @@
     <script src="resources/js/script.js"></script>
     <script type="text/javascript" src="resources/js/aos.js"></script>
     <script>
-        AOS.init();
+        AOS.init({
+            disable: window.innerWidth < 750
+        });
     </script>
 
 </body>
